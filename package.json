@@ -1,0 +1,13 @@
+{
+  "name": "evybraids",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site e agenda demonstrativa da Evy Braids",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

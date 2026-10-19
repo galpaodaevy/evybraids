@@ -1,181 +1,546 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evy Braids | Tranças Estilo Identidade</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Tranças, estilo e identidade com Evellyn Guimarães. Conheça o portfólio da Evy Braids e peça seu orçamento pelo Instagram.">
-<meta name="theme-color" content="#101012">
-<script src="script.js" defer></script>
-</head>
-<body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <header>
-        <a class="logo" href="#inicio" aria-label="Evy Braids, início"><span class="brand-mark" aria-hidden="true">≋</span> Evy<span>Braids</span><small>POR EVELLYN GUIMARÃES</small></a><nav aria-label="Navegação principal"><a href="#portfolio">Portfólio</a><a href="#sobre">Sobre a Evy</a><a class="nav-cta" href="https://instagram.com/evygbraids" target="_blank" rel="noopener noreferrer">Vamos conversar ↗</a></nav>
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#17151b" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("evy-theme") === "light" ? "light" : "dark";
+      } catch {}
+    </script>
+    <title>Evy Braids — Agendamentos · Da raiz pra cima</title>
+    <meta
+      name="description"
+      content="Tranças por Evellyn Guimarães. Escolha sua referência, personalize seu pedido e consulte dia e horário na Evy Braids."
+    />
+    <link rel="icon" href="assets/brand/evy-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/brand/evy-profile.png" />
+    <link rel="canonical" href="https://galpaodaevy.github.io/evybraids/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Evy Braids · Agendamentos" />
+    <meta
+      property="og:description"
+      content="Seu cabelo. Sua assinatura. Escolha sua trança e bora combinar com a Evy."
+    />
+    <meta
+      property="og:url"
+      content="https://galpaodaevy.github.io/evybraids/"
+    />
+    <meta
+      property="og:image"
+      content="https://galpaodaevy.github.io/evybraids/assets/images/agendamentos.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Evellyn Guimarães e a chamada Agendamentos da Evy Braids"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Evy Braids · Agendamentos" />
+    <meta
+      name="twitter:image"
+      content="https://galpaodaevy.github.io/evybraids/assets/images/agendamentos.jpg"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/anton.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#agenda">Pular para o agendamento</a>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Evy Braids, início"
+        ><img
+          class="site-logo logo-dark"
+          src="assets/brand/evy-logo-site.svg"
+          alt="Evy Braids" /><img
+          class="site-logo logo-light"
+          src="assets/brand/evy-logo-site-light.svg"
+          alt="Evy Braids"
+      /></a>
+      <nav aria-label="Principal">
+        <a href="#mural">O mural</a><a href="#a-evy">Quem trança</a
+        ><a
+          class="nav-insta"
+          href="https://www.instagram.com/evygbraids/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Instagram ↗</a
+        ><button id="theme-toggle" aria-label="Ativar modo dia">
+          ☀ <span>Dia</span>
+        </button>
+      </nav>
     </header>
-
-    <main id="conteudo">
-<section class="hero" id="inicio">
-        <div class="hero-content">
-            <span class="eyebrow">SUA RAIZ. SUA EXPRESSÃO.</span>
-            <h1>Tranças.<br>Identidade.<br><span>Atitude.</span></h1>
-            <p>Seu cabelo pode dizer muito sobre você. Encontre o visual que combina com a sua expressão.</p>
-            <div class="cta-buttons">
-                <a href="https://instagram.com/evygbraids" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Quero meu orçamento <span aria-hidden="true">↗</span></a>
-                <a href="#portfolio" class="text-link">Explore o portfólio ↓</a>
+    <main id="inicio">
+      <section class="opening" aria-label="Evy Braids e agendamento">
+        <div class="cover">
+          <p class="issue">
+            <span>POR EVELLYN GUIMARÃES</span
+            ><span>TRANÇAS / ZONA NORTE · SP</span>
+          </p>
+          <h1 aria-label="Evy Braids. Da raiz pra cima.">
+            <span class="cut-name" aria-hidden="true"
+              ><b>E</b><b>V</b><b>Y</b></span
+            ><span class="outline" aria-hidden="true">BRAIDS</span>
+          </h1>
+          <div class="cover-photo">
+            <img
+              src="assets/images/evellyn-hero.webp"
+              alt="Evellyn Guimarães, a Evy, sorrindo com suas tranças"
+              fetchpriority="high"
+              width="1068"
+              height="1400"
+            /><span class="photo-tape" aria-hidden="true"></span
+            ><span class="photo-index">FIG. 01 — A ARTISTA</span>
+          </div>
+          <span class="star-sticker" aria-hidden="true"
+            >RAIZ<br />& ATITUDE</span
+          >
+          <div class="cover-copy">
+            <p class="handwritten">Da raiz pra cima.</p>
+            <p>Tem história em cada divisão.<br />Tem você em cada trança.</p>
+            <p class="intro">
+              Sou a Evy. Escolha a referência, conte sua ideia e bora encontrar
+              um momento pro seu próximo visual.
+            </p>
+          </div>
+          <div class="tiny-note">
+            <span>↳</span> Seu cabelo.<br />Sua assinatura.
+          </div>
+          <p class="cover-footnote">
+            RETRATO CRIADO COM IA A PARTIR DAS FOTOS DE EVELLYN.
+          </p>
+        </div>
+        <aside id="agenda" class="booking-paper" aria-labelledby="agenda-title">
+          <div class="paper-tape" aria-hidden="true"></div>
+          <div class="paper-top">
+            <span>FICHA Nº 001 / EVY BRAIDS</span><span>● BORA COMBINAR</span>
+          </div>
+          <div class="agenda-heading">
+            <h2 id="agenda-title">QUAL É<br /><span>A SUA IDEIA?</span></h2>
+            <span class="doodle-arrow" aria-hidden="true">↙</span>
+          </div>
+          <p class="booking-intro">Seu próximo look começa nessa conversa.</p>
+          <form id="booking-form">
+            <label for="service"
+              ><span class="step-number">1</span> Tipo de trança /
+              referência</label
+            ><select id="service" required>
+              <option value="">Escolha o seu estilo</option>
+              <option>Nagô desenhada</option>
+              <option>Nagô em curvas</option>
+              <option>Locs com acessórios</option>
+              <option>Comprimento e ondas</option>
+              <option>Outra ideia / minha referência</option></select
+            ><input
+              id="custom-service"
+              aria-label="Descreva o tipo de trança"
+              placeholder="Qual técnica você tem em mente?"
+              maxlength="120"
+              hidden
+            />
+            <div class="date-label">
+              <label
+                ><span class="step-number">2</span> Um dia pra chamar de
+                seu</label
+              ><small>AGENDA EXEMPLO</small>
             </div>
-        </div>
-        <div class="hero-image"><div class="float-orb orb-pink" aria-hidden="true"></div><div class="float-orb orb-blue" aria-hidden="true"></div>
-            <img src="evellyn-hero.webp" alt="Evellyn Guimarães, trancista da Evy Braids" width="1068" height="1400" fetchpriority="high">
-            <span class="hero-tag"><span class="tag-star" aria-hidden="true">✳</span> Arte em cada<br><strong>trançado.</strong></span><span class="photo-label">Evellyn Guimarães <span>TRANCISTA · @EVYGBRAIDS</span></span>
-        </div>
-    </section>
-
-    <section class="strip">
-        <span>RAIZ</span><span>+</span><span>ARTE</span><span>+</span><span>MOVIMENTO</span><span>+</span><span>PERSONALIDADE</span>
-    </section>
-
-    <section class="about" id="sobre">
-        <div class="section-header">
-            <span class="number">01</span>
-            <h2>Conheça a profissional</h2>
-        </div>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Prazer, Evellyn.</h3>
-                <p>Evellyn Guimarães é trancista e o nome por trás da Evy Braids. Seu portfólio reúne desenhos na raiz, diferentes texturas e comprimentos que valorizam a expressão de cada pessoa.</p>
-                <span class="caption">Retratos criados com IA a partir das fotos de Evellyn.</span>
+            <div class="calendar">
+              <div class="month-nav">
+                <button id="prev" type="button" aria-label="Mês anterior">
+                  ←</button
+                ><strong id="month" aria-live="polite"></strong
+                ><button id="next" type="button" aria-label="Próximo mês">
+                  →
+                </button>
+              </div>
+              <div class="week" aria-hidden="true">
+                <span>D</span><span>S</span><span>T</span><span>Q</span
+                ><span>Q</span><span>S</span><span>S</span>
+              </div>
+              <div
+                id="days"
+                class="days"
+                role="group"
+                aria-label="Escolha um dia disponível"
+              ></div>
             </div>
-            <div class="about-images">
-                <img src="evellyn-retrato-pente.webp" alt="Evellyn Guimarães sorrindo, com pente na mão" width="1038" height="1400" loading="lazy" decoding="async">
-                <img src="evellyn-retrato-sorriso.webp" alt="Evellyn Guimarães sorrindo" width="1100" height="1328" loading="lazy" decoding="async">
+            <div class="calendar-key">
+              <span><i></i> Disponível na demonstração</span
+              ><span>Horários a confirmar</span>
             </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="section-header">
-            <span class="number">02</span>
-            <h2>Portfólio</h2>
-            <p>O desenho faz a diferença.</p>
-        </div>
-        <div class="cards-container">
-            <div class="card" data-tilt>
-                <div class="card-img">
-                    <img src="nago-desenhada.webp" alt="Nagô desenhada" width="1100" height="1100" loading="lazy" decoding="async">
+            <div class="time-line">
+              <label><span class="step-number">3</span> E o horário?</label>
+              <div
+                id="times"
+                role="group"
+                aria-label="Escolha um horário"
+              ></div>
+            </div>
+            <details id="personalize" class="personalize">
+              <summary>
+                + Seu nome, detalhes & mensagem <span>PERSONALIZE</span>
+              </summary>
+              <div class="personalize-content">
+                <label for="name">Como você se chama?</label
+                ><input
+                  id="name"
+                  autocomplete="given-name"
+                  maxlength="80"
+                  placeholder="Seu nome"
+                />
+                <div class="field-pair">
+                  <div>
+                    <label for="length">Comprimento</label
+                    ><select id="length">
+                      <option>A combinar</option>
+                      <option>Curto</option>
+                      <option>Médio</option>
+                      <option>Longo</option>
+                      <option>Extra longo</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="color">Cor / acessórios</label
+                    ><input
+                      id="color"
+                      maxlength="100"
+                      placeholder="Natural, colorida, dourados…"
+                    />
+                  </div>
                 </div>
-                <div class="card-info">
-                    <h3>Nagô desenhada</h3>
-                    <p>Curvas que lembram um coração, com acessórios azuis e verdes. O desenho acompanha a raiz.</p>
-                </div>
-            </div>
-
-            <div class="card" data-tilt>
-                <div class="card-img">
-                    <img src="nago-curvas.webp" alt="Nagô em curvas" width="1100" height="1359" loading="lazy" decoding="async">
-                </div>
-                <div class="card-info">
-                    <h3>Nagô em curvas</h3>
-                    <p>Linhas curvas conduzem as tranças para a parte de trás. A divisão define o acabamento.</p>
-                </div>
-            </div>
+                <label for="notes">Me conta sua ideia</label
+                ><textarea
+                  id="notes"
+                  rows="2"
+                  maxlength="800"
+                  placeholder="Referência, acabamento, alguma dúvida…"
+                ></textarea
+                ><label for="message"
+                  >Sua mensagem pra Evy
+                  <span class="editable-label">EDITÁVEL</span></label
+                ><textarea id="message" rows="5" maxlength="2500"></textarea
+                ><button id="reset-message" class="reset-message" type="button">
+                  ↻ Atualizar mensagem com minhas escolhas
+                </button>
+              </div>
+            </details>
+            <p id="selection" class="selection" role="status">
+              Escolha seu estilo, um dia e um horário.
+            </p>
+            <button class="send-request" type="submit">
+              <span>PREPARAR MEU PEDIDO</span><b>↗</b>
+            </button>
+            <p class="demo-note">
+              Dias e horários ilustrativos. O pedido não reserva uma vaga: a Evy
+              confirma disponibilidade, valor e duração na conversa.
+            </p>
+          </form>
+          <div id="result" hidden>
+            <span class="result-stamp">PEDIDO<br />NO CAPRICHO ✓</span>
+            <h3>Agora é com<br />você & a Evy.</h3>
+            <p>
+              Seu texto está pronto. Você pode editar antes de copiar e levar
+              para a conversa.
+            </p>
+            <textarea
+              id="final-message"
+              rows="8"
+              aria-label="Mensagem final editável"
+              maxlength="2500"
+            ></textarea
+            ><button id="copy" type="button" class="send-request">
+              COPIAR MINHA MENSAGEM <b>⧉</b></button
+            ><a
+              class="instagram-link"
+              href="https://www.instagram.com/evygbraids/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Abrir @evygbraids ↗</a
+            ><button id="restart" type="button" class="reset-message">
+              ← Voltar às minhas escolhas
+            </button>
+            <p id="copy-status" role="status"></p>
+            <p class="demo-note">
+              A reserva só vale após a confirmação da Evy.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section id="mural" class="mural" aria-labelledby="mural-title">
+        <div class="mural-heading">
+          <span class="catalogue">ARQUIVO DE REFERÊNCIAS / 01—04</span>
+          <h2 id="mural-title">
+            NÃO É SÓ CABELO.<br /><span>É PRESENÇA.</span>
+          </h2>
+          <p class="handwritten">Qual desses tem sua cara?</p>
+          <p class="mural-instruction">
+            Toque na foto para levar pra sua ficha. Curta para salvar suas
+            favoritas neste navegador.
+          </p>
         </div>
-    </section>
-
-    <section class="combinacoes" id="comprimento">
-        <div class="combinacoes-inner">
-            <div class="combinacoes-img">
-                <img src="raiz-marcada.webp" alt="Raiz marcada com mechas soltas" width="1100" height="1357" loading="lazy" decoding="async">
-            </div>
-            <div class="combinacoes-text">
-                <div class="section-header">
-                    <span class="number">03</span>
-                    <h2>Raiz marcada.<br>Mechas soltas.</h2>
-                </div>
-                <p>A nagô se combina ao comprimento e a mechas onduladas junto ao rosto. O contraste entre o desenho da raiz e os fios soltos cria movimento.</p>
-                <span class="caption">Envie esta referência ao pedir orçamento.</span>
-            </div>
+        <div class="photo-wall">
+          <article class="polaroid p-one">
+            <span class="tape" aria-hidden="true"></span
+            ><button class="photo-choice" data-service="Nagô desenhada">
+              <img
+                src="assets/images/nago-desenhada.webp"
+                alt="Tranças nagô com desenho de coração na raiz e acessórios coloridos"
+                loading="lazy"
+                width="1100"
+                height="1100"
+              /><span class="polaroid-caption"
+                ><small>01 / RAIZ & DESENHO</small
+                ><strong>Nagô desenhada</strong
+                ><span>ESSA É MINHA VIBE ↗</span></span
+              ></button
+            ><button
+              class="like"
+              data-like="nago-desenhada"
+              aria-label="Curtir Nagô desenhada neste site"
+              aria-pressed="false"
+            >
+              ♡ <span>Curti</span>
+            </button>
+          </article>
+          <article class="polaroid p-two">
+            <button class="photo-choice" data-service="Nagô em curvas">
+              <img
+                src="assets/images/nago-curvas.webp"
+                alt="Nagô em curvas com linhas desenhadas na raiz"
+                loading="lazy"
+                width="1100"
+                height="1359"
+              /><span class="polaroid-caption"
+                ><small>02 / LINHAS QUE FLUEM</small
+                ><strong>Nagô em curvas</strong
+                ><span>QUERO ESSA REFERÊNCIA ↗</span></span
+              ></button
+            ><button
+              class="like"
+              data-like="nago-curvas"
+              aria-label="Curtir Nagô em curvas neste site"
+              aria-pressed="false"
+            >
+              ♡ <span>Curti</span>
+            </button>
+          </article>
+          <div class="wall-scribble" aria-hidden="true">
+            seu estilo<br />não cabe<br />num padrão.<span>✷</span>
+          </div>
+          <article class="polaroid p-three">
+            <span class="tape" aria-hidden="true"></span
+            ><button class="photo-choice" data-service="Locs com acessórios">
+              <img
+                src="assets/images/locs-acessorios.webp"
+                alt="Referência de locs com acessórios dourados"
+                loading="lazy"
+                width="1032"
+                height="1400"
+              /><span class="polaroid-caption"
+                ><small>03 / DETALHES QUE FALAM</small
+                ><strong>Locs & acessórios</strong
+                ><span>LEVAR PRA MINHA FICHA ↗</span></span
+              ></button
+            ><button
+              class="like"
+              data-like="locs"
+              aria-label="Curtir Locs com acessórios neste site"
+              aria-pressed="false"
+            >
+              ♡ <span>Curti</span>
+            </button>
+          </article>
+          <article class="polaroid p-four">
+            <button class="photo-choice" data-service="Comprimento e ondas">
+              <img
+                src="assets/images/comprimento-ondulado.webp"
+                alt="Comprimento ondulado com cachos e volume visto de costas"
+                loading="lazy"
+                width="1059"
+                height="1400"
+              /><span class="polaroid-caption"
+                ><small>04 / VOLUME & MOVIMENTO</small
+                ><strong>Comprimento & ondas</strong
+                ><span>É ESSA ENERGIA ↗</span></span
+              ></button
+            ><button
+              class="like"
+              data-like="ondas"
+              aria-label="Curtir Comprimento e ondas neste site"
+              aria-pressed="false"
+            >
+              ♡ <span>Curti</span>
+            </button>
+          </article>
+          <div class="wall-label" aria-hidden="true">
+            FEITO À MÃO.<br /><span>DO SEU JEITO.</span>
+          </div>
         </div>
-    </section>
-
-    <section class="portfolio texturas" id="texturas">
-        <div class="section-header">
-            <span class="number">04</span>
-            <h2>Mais formas de se expressar.</h2>
+        <p class="reference-note">
+          As fotos são referências de visual. Técnica, aplicação e materiais são
+          definidos com a Evy. As curtidas são favoritas locais, sem publicar no
+          Instagram.
+        </p>
+      </section>
+      <section id="a-evy" class="about-evy">
+        <div class="about-image">
+          <img
+            src="assets/images/evellyn-retrato-pente.webp"
+            alt="Evellyn Guimarães sorrindo e segurando um pente"
+            loading="lazy"
+            width="1038"
+            height="1400"
+          /><span class="about-name">EVELLYN<br /><b>GUIMARÃES.</b></span
+          ><small>RETRATO CRIADO COM IA A PARTIR DAS FOTOS DE EVELLYN.</small>
         </div>
-        <div class="cards-container">
-            <div class="card" data-tilt>
-                <div class="card-img">
-                    <img src="locs-acessorios.webp" alt="Locs com acessórios dourados" width="1032" height="1400" loading="lazy" decoding="async">
-                </div>
-                <div class="card-info">
-                    <h3>Locs com acessórios</h3>
-                    <p>Mechas de aparência cilíndrica e textura encorpada, com detalhes dourados. O efeito lembra faux locs, que podem ser construídos com extensões.</p>
-                    <span class="caption">Leitura provável: faux locs. Material e aplicação devem ser confirmados com Evellyn.</span>
-                </div>
-            </div>
-
-            <div class="card" data-tilt>
-                <div class="card-img">
-                    <img src="comprimento-ondulado.webp" alt="Comprimento ondulado" width="1059" height="1400" loading="lazy" decoding="async">
-                </div>
-                <div class="card-info">
-                    <h3>Comprimento ondulado</h3>
-                    <p>Ondas e cachos predominam no comprimento. Pequenas bases aparecem no topo, enquanto os fios soltos destacam o volume visto de costas.</p>
-                    <span class="caption">Pode lembrar boho/goddess. A técnica exata não fica clara na foto; use-a como referência.</span>
-                </div>
-            </div>
+        <div class="about-copy">
+          <span class="catalogue">QUEM TÁ POR TRÁS DO TRAMPO</span>
+          <h2>MÃO NA RAIZ.<br /><span>IDEIA NA CABEÇA.</span></h2>
+          <p class="handwritten">Pode me chamar de Evy.</p>
+          <p>
+            Evellyn Guimarães é a mulher por trás da Evy Braids. É no encontro
+            entre as mãos dela e a sua ideia que cada desenho ganha forma.
+          </p>
+          <p>
+            Uma referência no celular, uma vontade de mudar, um detalhe que é só
+            seu. A conversa começa daí.
+          </p>
+          <a href="#agenda" class="back-to-form">Sua ficha tá lá em cima ↑</a
+          ><span class="about-doodle" aria-hidden="true">♡</span>
         </div>
-    </section>
-
-    <section class="filtro">
-        <div class="filtro-inner">
-            <span class="eyebrow">Qual combina com você?</span>
-            <h2>Escolha a sua referência.</h2>
-            <div class="filtro-options">
-                <a href="#portfolio" class="filtro-btn">
-                    <strong>Desenho na raiz</strong>
-                    <span>Explore linhas e curvas de nagô.</span>
-                </a>
-                <a href="#comprimento" class="filtro-btn">
-                    <strong>Comprimento</strong>
-                    <span>Converse sobre tamanho e acabamento.</span>
-                </a>
-                <a href="#texturas" class="filtro-btn">
-                    <strong>Mais textura</strong>
-                    <span>Experimente referências com ondas e locs.</span>
-                </a>
-            </div>
+      </section>
+      <section
+        class="from-instagram"
+        aria-label="Publicações da Evy no Instagram"
+      >
+        <div class="insta-heading">
+          <span class="catalogue">DIRETO DO @EVYGBRAIDS</span>
+          <h2>DO FEED<br /><span>PRO SEU PRÓXIMO LOOK.</span></h2>
+          <p>
+            Três referências publicadas pela Evy. Abra o post e veja mais
+            detalhes.
+          </p>
         </div>
-    </section>
-
-    <section class="faq">
-        <div class="section-header">
-            <span class="number">05</span>
-            <h2>Antes de marcar</h2>
-            <p>Tudo começa na conversa.</p>
+        <div class="insta-posts">
+          <a
+            href="https://www.instagram.com/evygbraids/p/DcdjnPGFgeQ/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="assets/images/instagram-french-curly.webp"
+              alt="French Curly Braids com divisões geométricas, do Instagram da Evy"
+              loading="lazy"
+            /><span>FRENCH CURLY BRAIDS <b>↗</b></span
+            ><small>VER POST NO INSTAGRAM</small></a
+          >
+          <a
+            href="https://www.instagram.com/evygbraids/p/DY0nXFkFsSb/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="assets/images/instagram-nago-cruzada.jpg"
+              alt="Nagô cruzada, referência publicada por Evy Braids"
+              loading="lazy"
+            /><span>NAGÔ CRUZADA <b>↗</b></span
+            ><small>VER POST NO INSTAGRAM</small></a
+          >
+          <a
+            href="https://www.instagram.com/evygbraids/p/DX9QMoPlvbx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              src="assets/images/instagram-ghana.jpg"
+              alt="Ghana Braids, referência publicada por Evy Braids"
+              loading="lazy"
+            /><span>GHANA BRAIDS <b>↗</b></span
+            ><small>VER POST NO INSTAGRAM</small></a
+          >
         </div>
-        <div class="accordion">
-            <details class="accordion-item"><summary>Como peço um orçamento?</summary><p>Envie no Instagram a referência escolhida, comprimento, cor, uma foto atual do seu cabelo e a data desejada.</p></details>
-            <details class="accordion-item"><summary>Quanto custa e quanto tempo leva?</summary><p>Valor e duração dependem do modelo, comprimento, quantidade de tranças e materiais. Consulte Evellyn.</p></details>
-            <details class="accordion-item"><summary>Preciso levar o material?</summary><p>Confirme se a fibra e os acessórios estão incluídos. Combine também como preparar o cabelo antes de ir.</p></details>
-            <details class="accordion-item"><summary>Como cuido depois?</summary><p>Peça orientações de lavagem, secagem, proteção ao dormir, manutenção e retirada para a técnica escolhida.</p></details>
+      </section>
+      <section class="instagram-section">
+        <div class="insta-sticker" aria-hidden="true">
+          SIGA<br />ESSA<br />RAIZ. ↗
         </div>
-    </section>
-
+        <div>
+          <span class="catalogue">O TRAMPO CONTINUA NO FEED</span>
+          <h2>@EVYGBRAIDS</h2>
+          <p>Mais referências, detalhes de perto e a conversa com a Evy.</p>
+          <a
+            href="https://www.instagram.com/evygbraids/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >SEGUIR NO INSTAGRAM ↗</a
+          ><button id="share-site" type="button">
+            COMPARTILHAR AGENDAMENTOS ⤴
+          </button>
+          <p id="share-status" role="status"></p>
+        </div>
+      </section>
+      <section class="before-you-come">
+        <div>
+          <span class="catalogue">PAPO RETO, ANTES DE MARCAR</span>
+          <h2>BORA TIRAR<br /><span>AS DÚVIDAS?</span></h2>
+        </div>
+        <div class="questions">
+          <details>
+            <summary>
+              Já fica reservado quando eu escolho?<span>+</span>
+            </summary>
+            <p>
+              Ainda não. Esta agenda é uma demonstração. Escolher dia e horário
+              prepara um pedido; a Evy confirma a disponibilidade na conversa
+              pelo Instagram.
+            </p>
+          </details>
+          <details>
+            <summary>Quanto custa? Quanto tempo leva?<span>+</span></summary>
+            <p>
+              O valor e a duração dependem da técnica, do comprimento, dos
+              materiais e do acabamento. Envie sua referência e uma foto atual
+              do cabelo para combinar tudo com a Evy.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Minha ideia não tá nas fotos. E agora?<span>+</span>
+            </summary>
+            <p>
+              Escolha “Outra ideia / minha referência” na ficha. Descreva o que
+              você imaginou e leve a foto de referência para a conversa. O campo
+              de mensagem também é todo editável.
+            </p>
+          </details>
+        </div>
+      </section>
     </main>
-<footer id="contato">
-        <div class="footer-cta"><span class="eyebrow">SEU PRÓXIMO VISUAL COMEÇA AQUI</span>
-            <h2>Pronta para se ver diferente?</h2>
-            <p>Mande sua inspiração. Consulte orçamento, local de atendimento e disponibilidade com Evellyn.</p>
-            <a href="https://instagram.com/evygbraids" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Pedir orçamento no Instagram <span aria-hidden="true">↗</span></a>
-        </div>
-
-        <div class="footer-credits">
-            <p>feito por Andrew Moura @andrewgestortrafego 11954377399</p>
-        </div>
+    <footer>
+      <a class="wordmark" href="#inicio"
+        ><img
+          class="site-logo logo-dark"
+          src="assets/brand/evy-logo-site.svg"
+          alt="Evy Braids" /><img
+          class="site-logo logo-light"
+          src="assets/brand/evy-logo-site-light.svg"
+          alt="Evy Braids"
+      /></a>
+      <p>DA RAIZ PRA CIMA. SEM PEDIR LICENÇA.</p>
+      <a
+        href="https://www.instagram.com/evygbraids/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >@EVYGBRAIDS ↗</a
+      ><small>CONCEITO DE SITE / AGENDAMENTO DEMONSTRATIVO</small>
     </footer>
-
-</body>
+    <div id="toast" role="status" hidden></div>
+  </body>
 </html>
